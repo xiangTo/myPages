@@ -13,28 +13,40 @@
             height: 100%;
         }
         @keyframes myfirst {
-            from{
-                opacity: 0;
-            }
-            to{
-                opacity: 100;
-            }
+            0%{opacity: 0;}
+            25%{opacity: 100;}
+            50%{opacity: 0;}
+            100%{opacity: 0;}
         }
-        h1,p{
-            animation: myfirst 1.5s infinite;
+        @keyframes mysecond {
+            0%{opacity: 0;}
+            50%{opacity: 0;}
+            75%{opacity: 100;}
+            100%{opacity: 0;}
+        }
+        p{
+            font-size: 100px;
+            position: absolute;
+            text-align: center;
+            animation: myfirst 7.47s infinite;
+        }
+        #canghai{
+            animation: myfirst 7.47s infinite;
+        }
+        #taotao{
+            animation: mysecond 7.47s infinite;
         }
 
     </style>
     
 </head>
 <body>
-    <audio src="wav/bgm.mp3" controls="controls" autoplay="autoplay">
+    <audio src="wav/bgm.mp3" controls="controls" autoplay="autoplay" loop="loop">
     </audio>
 
-    <h1>hh</h1>
-    <p>哈哈哈哈哈哈.</p>
-    <p>哈哈哈哈哈哈.</p>
-    <p>哈哈哈哈哈哈.</p>
-    <p>哈哈哈哈哈哈.</p>
+<!--    <h1>hh</h1>-->
+
+    <p id="canghai">沧海笑</p>
+    <p id="taotao">滔滔两岸潮</p>
 </body>
 </html>
